@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>felinestealth</title>
+        <link rel="stylesheet" type="text/css" href="felinestealth.css">
+        <meta name="description" content="More code breakdown work in HTML and CSS."charset="utf-8"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type ="text/javascript">
+            $(document).ready(function(){
+            
+                $('img').hover(function(){
+                    var alt =$(this).attr("data-alt-src");
+                    var temp =$(this).attr("src");
+                 $(this).attr ("src", alt);
+                 $(this).attr ('data-alt-src', temp);
+
+                })
+
+                
+            });
+            </script>
+    </head>
+    <body>
+        <div id ="allpics">
+        <img src = 'cat0.png' data-alt-src = 'ninja0.png'/>
+        <img src = 'cat1.png' data-alt-src = 'ninja1.png'/>
+        <img src = 'cat2.png' data-alt-src = 'ninja2.png'/>
+        <img src = 'cat3.png' data-alt-src = 'ninja3.png'/>
+        <img src = 'cat4.png' data-alt-src = 'ninja4.png'/>
+        </div>
+
+
+    </body>
